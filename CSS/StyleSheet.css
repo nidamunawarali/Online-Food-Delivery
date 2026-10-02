@@ -1,0 +1,243 @@
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Almendra", serif;
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* CSS Variables */
+        :root {
+            --navbar_height: 59px
+        }
+
+        /* Navigation bar */
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        /* Navigation bar: LOGO and image */
+        #logo {
+            margin: 5px 0px;
+        }
+
+        #logo img {
+            height: 80px;
+            width: 170px;
+            margin: 0px -40px;
+        }
+
+        /* Navigation bar: list styling */
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: rgb(9, 9, 9, 0.45);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 5px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: rgb(141, 138, 138);
+            background-color: white;
+        }
+
+        /* Home Section */
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 5px 200px;
+            height: 550px;
+            justify-content: center;
+            align-items: center;
+            top: 0px;
+            left: 0px;
+            scroll-margin-top: 90px;
+        }
+
+        #home::before {
+            content: "";
+            background: url("../Images/background.png") no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.78;
+            top: 0px;
+            left: 0px;
+        }
+
+        #home p {
+            font-size: 1.3rem;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 7px 18px;
+            margin: 15px;
+            color: black;
+            font-size: 1.1rem;
+            background-color: white;
+            border: 2px solid gray;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            color: white;
+            background-color: rgb(92, 89, 89);
+        }
+
+        /* Services Section */
+        #services-container {
+            background: url("../Images/background2.png") no-repeat center center/cover;
+            width: 100%;
+            scroll-margin-top: 90px;
+        }
+
+        #services {
+            display: flex;
+            margin: 0px 34px;
+        }
+
+        #services .box {
+            border: 4px solid rgb(189, 131, 31);
+            margin: 0px 8px;
+            padding: 9px;
+            border-radius: 24px;
+            background-color: rgb(249, 238, 222);
+
+        }
+
+        #services .box img {
+            height: 250px;
+            width: 400px;
+            border-radius: 24px;
+            display: block;
+            margin: auto;
+
+        }
+
+        /* Client Section */
+
+        #client-section {
+            height: 344px;
+            scroll-margin-top: 90px;
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url("../Images/background3.png") no-repeat center center/cover;
+            width: 100%;
+            height: 50%;
+            z-index: -1;
+            opacity: 0.78;
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #clients img {
+            height: 180px;
+            width: 200px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+        /* Contact Section */
+        #contact {
+            position: relative;
+            scroll-margin-top: 90px;
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.78;
+            background: url("../Images/background2.png");
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box label {
+            font-size: 1.3rem;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1.1rem;
+            border-radius: 10px;
+            border: 2px solid gray
+        }
+
+        #contact-box .form-group:last-child {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 9px 20px;
+
+        }
+
+        /* Utility class */
+        .h-primary {
+            font-size: 3.1rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-size: 2.1rem;
+            padding: 12px;
+        }
+
+        .center {
+            text-align: center;
+        }
